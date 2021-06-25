@@ -1,0 +1,267 @@
+@charset "utf-8";
+/* CSS Document */
+
+#container {
+	width: 1500px;
+	margin: 0 auto;
+}
+
+#content {
+	height: 600px;
+	margin-top: 20px;
+}
+
+#sub_nav {
+	width: 220px;
+	margin-top: 450px;
+	margin-left: 204px;
+	float: left;
+	color: #5c307d;
+}
+
+#sub_nav h3 {
+	background: #582B39;
+	color: #fff;
+	font-size: 22px;
+	line-height: 50px;
+	padding: 0 40px;
+	text-align: center;
+	margin: 0;
+}
+
+#sub {
+	background-color: #A86465;
+	border-top: 1px solid #582B39;
+	margin-top: 10px;
+	display: block;
+}
+
+#sub li {
+	border-bottom: 1px solid #582B39;
+	color: #A86465;
+	font-size: 15px;
+	line-height: 24px;
+	position: relative;
+	z-index: 1;
+	margin-left: -15px;
+}
+
+#sub li a {
+	background-color: #FFFFFF;
+	font-size: 18px;
+	color: #582B39;
+	display: block;
+	padding: 15px 0 8px 40px;
+	margin-right: 0px;
+	z-index: 1;
+	letter-spacing: 2px;
+}
+
+#sub li a:hover {
+	background-color: #A6AE9D;
+	color: #fff;
+}
+
+/* 
+#sub li ul {
+	list-style: none;
+	float: left;
+	height: 44px;
+	position: relative;
+	overflow: hidden;
+	background: rgba(238, 238, 238, 0.9);
+	display: none;
+	padding: 0px;
+}
+
+#sub li ul li {
+	float: none;
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+#sub li ul li:hover {
+	margin: 0px;
+}
+
+#sub li ul li a {
+	line-height: 44px;
+	font-size: 16px;
+	color: #000;
+	background-color: rgba(238, 238, 238, 0.9);
+	width: 150px;
+	padding: 0px 10px 0px 10px;
+	text-align: center;
+}
+
+#sub li ul li:first-child a {
+	background: rgba(238, 238, 238, 0.9);
+}
+
+#sub li ul li a:hover {
+	background: rgba(238, 238, 238, 1);
+	width: 150px;
+	text-align: center;
+	margin-top: 0px;
+}
+
+#sub li:hover ul {
+	display: block;
+} */
+
+#main_img {
+	width: 60%;
+	float: right;
+	margin-right: 44px;
+	margin-top: 430px;
+}
+
+#main {
+	border: 1px solid #ddd;
+	padding: 20px;
+	float: left;
+	margin-top: 60px;
+	margin-right: 44px;
+	margin-left: 44px;
+}
+
+.nytitle {
+	font: 14px "microsoft yahei";
+	color: #000;
+	font-family: 'microsoft yahei';
+	box-sizing: border-box;
+	border-bottom: 1px solid #867565;
+	/* margin-bottom: 40px; */
+}
+
+.ch {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: #94070a 6px solid;
+	box-sizing: border-box;
+	font-size: 28px;
+	color: #94070a;
+	margin: 0px 0 5px;
+	display: inline-block;
+	letter-spacing: 5px;
+}
+
+.en {
+	font: 30px "microsoft yahei" !important;
+	box-sizing: border-box;
+	font-family: Arial;
+	font-size: 25px !important;
+	color: #867565;
+	margin-bottom: 27px;
+}
+
+.nyrecruit {
+	width: 100%;
+	font: 14px "microsoft yahei";
+	color: #000;
+	font-size: 16.5px;
+	position: relative;
+	z-index: 999;
+	height: 170px;
+	overflow: hidden;
+}
+
+.nyrecruit ul {
+	color: #000;
+	font-size: 16.5px;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.nyrecruit ul li {
+	font-size: 16.5px;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 24px;
+	border-bottom: 1px solid #5F4B36;
+}
+
+.nyrecruit ul li a {
+	font-size: 16.5px;
+	line-height: 40px;
+	text-decoration: none;
+	color: #5F4B36;
+}
+
+.nyrecruit ul li a:hover {
+	background-color: white !important;
+}
+
+.nyrecruit ul span {
+	font-size: 16.5px;
+	line-height: 40px;
+	color: #5F4B36;
+	float: left;
+	width: 88%;
+	vertical-align: middle;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	/* font-family:monospace; */
+}
+
+.nyrecruit ul i {
+	line-height: 40px;
+	color: #5F4B36;
+	box-sizing: border-box;
+	font-style: normal;
+	float: left;
+	width: 12%;
+	vertical-align: middle;
+	text-align: right;
+}
+
+.pages {
+	font: 14px "microsoft yahei";
+	color: #000;
+	box-sizing: border-box;
+	margin-top: 15px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.pages a {
+	font: 14px "microsoft yahei";
+	text-align: center;
+	font-size: 14px;
+	box-sizing: border-box;
+	background-color: transparent;
+	text-decoration: none;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	color: #5F4B36;
+	border: 1px solid #D1C0A5;
+	margin: 0 5px;
+	vertical-align: middle;
+	padding: 0 10px;
+	cursor: pointer;
+}
+
+.pageActive {
+	background-color: #5F4B36 !important;
+	color: #ffffff !important;
+}
+
+#law_list li {
+	cursor: pointer;
+}
+
+.subActive {
+	background-color: #A6AE9D !important;
+	color: #fff !important;
+}
+
+#law_list li {
+	cursor: pointer;
+}

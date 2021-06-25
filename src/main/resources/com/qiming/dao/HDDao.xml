@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qiming.dao.HDDao">
+    <insert id="addHjl" parameterType="com.qiming.domain.Hjl">
+        insert into t_hjl(id,username,title,content,time,img) values (#{id},#{username},#{title},#{content},#{time},#{img})
+    </insert>
+    <select id="hjlAllByName" resultType="com.qiming.domain.Hjl">
+        select *from t_hjl where username=#{username}
+    </select>
+    <!--获取总条数-->
+    <select id="hjlGetCount" resultType="int">
+        select count(*) from t_hjl
+    </select>
+    <!--分页展示-->
+    <select id="hjlGetPageData" resultType="com.qiming.domain.Hjl">
+        select *from t_hjl limit #{index} , 5
+    </select>
+    <!--查找所有-->
+    <select id="hjlAll" resultType="com.qiming.domain.Hjl">
+        select *from t_hjl
+    </select>
+    <update id="addComment">
+        update t_hjl set reply =#{reply} where id=#{id}
+    </update>
+</mapper>

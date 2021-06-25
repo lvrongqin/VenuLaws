@@ -1,0 +1,185 @@
+@charset "utf-8";
+/* CSS Document */
+
+#container {
+	width: 1500px;
+	margin: 0 auto;
+}
+
+#content {
+	width: 1500px;
+	background: #EDE9D0;
+}
+
+.main {
+	width: 100%;
+	padding: 60px 0;
+	margin-bottom: -200px;
+}
+
+.main ul li {
+	list-style: none;
+	width: 950px;
+}
+
+.main ul {
+	width: 950px;
+	margin: 0 auto;
+}
+
+.main ul li {
+	position: relative;
+	text-align: left;
+	width: 920px;
+	background: #a7685ba2;
+	color: #fff;
+	letter-spacing: 1px;
+	/* opacity: 0.7; */
+	border-radius: 20px;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, .2);
+	padding: 15px;
+	transition: 0.2s;
+}
+
+.main ul li:hover {
+	background: #A7685B;
+	transform: translateY(-5px);
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+}
+.main ul li:hover .personMsg a{
+	color: greenyellow;
+}
+.c_box a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.c_btn {
+	font-size: 12px;
+	width: 100px;
+	text-align: right;
+	float: right;
+	position: relative;
+	top: 15px;
+	left: 40px;
+}
+
+.c_btn a {
+	display: block;
+	width: 55px;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	margin-right: 20px;
+}
+
+.comment {
+	background: url(../images/comment.png) no-repeat;
+}
+
+.collect {
+	background: url(../images/collect.png) no-repeat;
+}
+
+.share {
+	background: url(../images/share.png) no-repeat;
+}
+
+strong a:hover {
+	text-decoration: underline;
+}
+
+.c_box p {
+	position: relative;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.write {
+	width: 900px;
+	background: #A7685B;
+	clear: both;
+	margin: 0 auto;
+	border-radius: 5px;
+	position: relative;
+	margin-top: 50px;
+	padding: 50px;
+	text-align: left;
+	line-height: 30px;
+	color: #333;
+}
+
+.write textarea {
+	line-height: 35px;
+	font-size: 14px;
+	color: #777;
+	border: 1px solid #3f479c;
+	resize: none;
+	padding: 0 5px;
+	border-radius: 5px;
+}
+
+.write .w_title span, .write .w_des span {
+	position: relative;
+	bottom: 14px;
+	color: #FFFFFF;
+}
+
+.write .w_content span {
+	position: relative;
+	bottom: 330px;
+	color: #FFFFFF;
+}
+
+.write .imgSub img {
+	cursor: pointer;
+	margin-top: 30px;
+	position: relative;
+	margin-left: 50px;
+}
+
+.write .imgSub img:hover {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+.write .add {
+	cursor: pointer;
+	position: relative;
+	color: #FFFFFF;
+	bottom: 20px;
+	left: 5px;
+}
+
+.write button {
+	float: right;
+	width: 80px;
+	height: 50px;
+	margin-top: 30px;
+	margin-right: 60px;
+	border-radius: 10px;
+	background: #A7685B;
+	color: #fff;
+	border: 1.5px solid #A7685B;
+	font-size: 18px;
+}
+
+.write a input {
+	float: right;
+	width: 80px;
+	height: 50px;
+	margin-top: 30px;
+	margin-right: 60px;
+	border-radius: 10px;
+	background: #A7685B;
+	color: #fff;
+	border: 1.5px solid #A7685B;
+}
+
+.write button:hover {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+.write button{
+	cursor: pointer;
+}

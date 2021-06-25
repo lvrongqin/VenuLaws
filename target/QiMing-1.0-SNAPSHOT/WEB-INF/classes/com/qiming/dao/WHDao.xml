@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qiming.dao.WHDao">
+    <!--添加-->
+    <insert id="addWhq" parameterType="com.qiming.domain.Whq">
+        insert into t_whq(id,title,time,content)values(#{id},#{title},#{time},#{content})
+    </insert>
+    <!--获取总条数-->
+    <select id="whqGetCount" resultType="int">
+        select count(*) from t_whq
+    </select>
+    <!--分页展示-->
+    <select id="whqGetPageData" resultType="com.qiming.domain.Whq">
+        select *from t_whq limit #{index} , 5
+    </select>
+    <!--查找所有-->
+    <select id="whqAll" resultType="com.qiming.domain.Whq">
+        select *from t_whq
+    </select>
+    <!--根据id查询-->
+    <select id="whqFindById" resultType="com.qiming.domain.Whq">
+        select *from t_whq where id=#{id}
+    </select>
+
+    <!--添加-->
+    <insert id="addWls" parameterType="com.qiming.domain.Wls">
+        insert into t_wls(id,title,time,content)values(#{id},#{title},#{time},#{content})
+    </insert>
+    <!--获取总条数-->
+    <select id="wlsGetCount" resultType="int">
+        select count(*) from t_wls
+    </select>
+    <!--分页展示-->
+    <select id="wlsGetPageData" resultType="com.qiming.domain.Wls">
+        select *from t_wls limit #{index} , 5
+    </select>
+    <!--查找所有-->
+    <select id="wlsAll" resultType="com.qiming.domain.Wls">
+        select *from t_wls
+    </select>
+    <!--根据id查询-->
+    <select id="wlsFindById" resultType="com.qiming.domain.Wls">
+        select *from t_wls where id=#{id}
+    </select>
+
+    <!--添加-->
+    <insert id="addWmy" parameterType="com.qiming.domain.Wmy">
+        insert into t_wmy(id,title,time,content)values(#{id},#{title},#{time},#{content})
+    </insert>
+    <!--获取总条数-->
+    <select id="wmyGetCount" resultType="int">
+        select count(*) from t_wmy
+    </select>
+    <!--分页展示-->
+    <select id="wmyGetPageData" resultType="com.qiming.domain.Wmy">
+        select *from t_wmy limit #{index} , 5
+    </select>
+    <!--查找所有-->
+    <select id="wmyAll" resultType="com.qiming.domain.Wmy">
+        select *from t_wmy
+    </select>
+    <!--根据id查询-->
+    <select id="wmyFindById" resultType="com.qiming.domain.Wmy">
+        select *from t_wmy where id=#{id}
+    </select>
+
+    <!--添加-->
+    <insert id="addWzs" parameterType="com.qiming.domain.Wzs">
+        insert into t_wzs(id,title,time,content)values(#{id},#{title},#{time},#{content})
+    </insert>
+    <!--获取总条数-->
+    <select id="wzsGetCount" resultType="int">
+        select count(*) from t_wzs
+    </select>
+    <!--分页展示-->
+    <select id="wzsGetPageData" resultType="com.qiming.domain.Wzs">
+        select *from t_wmy limit #{index} , 5
+    </select>
+    <!--查找所有-->
+    <select id="wzsAll" resultType="com.qiming.domain.Wzs">
+        select *from t_wzs
+    </select>
+    <!--根据id查询-->
+    <select id="wzsFindById" resultType="com.qiming.domain.Wzs">
+        select *from t_wzs where id=#{id}
+    </select>
+
+    <!--添加-->
+    <insert id="addWxf" parameterType="com.qiming.domain.Wxf">
+        insert into t_wxf(id,title,time,content)values(#{id},#{title},#{time},#{content})
+    </insert>
+    <!--获取总条数-->
+    <select id="wxfGetCount" resultType="int">
+        select count(*) from t_wxf
+    </select>
+    <!--分页展示-->
+    <select id="wxfGetPageData" resultType="com.qiming.domain.Wxf">
+        select *from t_wxf limit #{index} , 5
+    </select>
+    <!--查找所有-->
+    <select id="wxfAll" resultType="com.qiming.domain.Wxf">
+        select *from t_wxf
+    </select>
+    <!--根据id查询-->
+    <select id="wxfFindById" resultType="com.qiming.domain.Wxf">
+        select *from t_wxf where id=#{id}
+    </select>
+
+    <!--添加-->
+    <insert id="addWxc" parameterType="com.qiming.domain.Wxc">
+        insert into t_wxc(id,title,time,content)values(#{id},#{title},#{time},#{content})
+    </insert>
+    <!--获取总条数-->
+    <select id="wxcGetCount" resultType="int">
+        select count(*) from t_wxc
+    </select>
+    <!--分页展示-->
+    <select id="wxcGetPageData" resultType="com.qiming.domain.Wxc">
+        select *from t_wxc limit #{index} , 5
+    </select>
+    <!--查找所有-->
+    <select id="wxcAll" resultType="com.qiming.domain.Wxc">
+        select *from t_wxc
+    </select>
+    <!--根据id查询-->
+    <select id="wxcFindById" resultType="com.qiming.domain.Wxc">
+        select *from t_wxc where id=#{id}
+    </select>
+
+</mapper>

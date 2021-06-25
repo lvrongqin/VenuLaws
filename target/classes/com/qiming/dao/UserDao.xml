@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qiming.dao.UserDao">
+    <select id="login" parameterType="com.qiming.domain.User" resultType="com.qiming.domain.User">
+        select * from t_user where username=#{username} and password=#{password}
+    </select>
+    <insert id="register" parameterType="com.qiming.domain.User">
+        insert into t_user(id,truename,card_id,username,password) values(#{id},#{truename},#{card_id},#{username},#{password})
+    </insert>
+    <select id="alogin" parameterType="com.qiming.domain.Admin" resultType="com.qiming.domain.Admin">
+        select * from t_admin where username=#{username} and password=#{password}
+    </select>
+    <insert id="aregister" parameterType="com.qiming.domain.Admin">
+        insert into t_admin(id,truename,card_id,username,password) values(#{id},#{truename},#{card_id},#{username},#{password})
+    </insert>
+    <update id="updateUser" parameterType="com.qiming.domain.User">
+        update t_user set gender=#{Uuser.gender},birth=#{Uuser.birth},declar=#{Uuser.declar},img=#{Uuser.img} where username=#{username}
+    </update>
+</mapper>

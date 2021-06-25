@@ -1,0 +1,196 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	overflow-x: hidden;
+}
+#container {
+	width: 1500px;
+	margin: 0 auto;
+}
+#content{
+	position: relative;
+	height: 200px;
+	margin-top: 420px;
+	padding: 50px 0;
+}
+.content{
+	position: absolute;
+	left: 200px;
+	top: 60px;
+}
+#main_img{
+	position: absolute;
+	right: 00px;
+	top: -300px;
+}
+.title_bottom{
+	position: absolute;
+	top: 200px;
+	left: 0;
+	width: 220px;
+	height: 35px;
+	vertical-align: top;
+	background-color:  #df1014;
+	/* background-color:  #000; */
+	text-align: center;
+	font-size: 22px;
+	letter-spacing: 5px;
+	color: #fff;
+}
+
+#jquery-accordion-menu{
+	position: absolute;
+	bottom: -135px;
+	left: 200px;
+	width: 200px;
+}
+#main_img {
+	width: 60%;
+	float: right;
+	margin-right: 44px;
+	margin-top: 340px;
+	height: 400px;
+}
+
+#main {
+	border: 1px solid #ddd;
+	padding: 20px;
+	float: left;
+	margin-top: 60px;
+	margin-right: 44px;
+	margin-left: 44px;
+}
+
+.nytitle {
+	font: 14px "microsoft yahei";
+	color: #000;
+	font-family: 'microsoft yahei';
+	box-sizing: border-box;
+	border-bottom: 1px solid #867565;
+	/* margin-bottom: 40px; */
+}
+
+
+.ch {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: #94070a 6px solid;
+	box-sizing: border-box;
+	font-size: 28px;
+	color: #94070a;
+	margin:0px 0 5px;
+	display: inline-block;
+	letter-spacing: 5px;
+}
+
+.en {
+	font: 30px "microsoft yahei" !important;
+	box-sizing: border-box;
+	font-family: Arial;
+	font-size: 30px;
+	color: #867565;
+	margin-bottom: 27px;
+}
+
+.nyrecruit {
+	width: 100%;
+	font: 14px "microsoft yahei";
+	color: #000;
+	font-size: 16.5px;
+	position: relative;
+	z-index: 999;
+	height: 170px;
+	overflow: hidden;
+}
+
+.nyrecruit ul {
+	color: #000;
+	font-size: 16.5px;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.nyrecruit ul li {
+	font-size: 16.5px;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 24px;
+	border-bottom: 1px solid #5F4B36;
+}
+
+.nyrecruit ul li a {
+	font-size: 16.5px;
+	line-height: 40px;
+	text-decoration: none;
+	color: #5F4B36;
+}
+
+.nyrecruit ul li a:hover {
+	background-color: white !important;
+}
+
+.nyrecruit ul span {
+	font-size: 16.5px;
+	line-height: 40px;
+	color: #5F4B36;
+	float: left;
+	width: 88%;
+	vertical-align: middle;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	/* font-family:monospace; */
+}
+
+.nyrecruit ul i {
+	line-height: 40px;
+	color: #5F4B36;
+	box-sizing: border-box;
+	font-style: normal;
+	float: left;
+	width: 12%;
+	vertical-align: middle;
+	text-align: right;
+}
+
+
+
+.pages {
+	font: 14px "microsoft yahei";
+	color: #000;
+	box-sizing: border-box;
+	margin-top: 15px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.pages a {
+	font: 14px "microsoft yahei";
+	text-align: center;
+	font-size: 14px;
+	box-sizing: border-box;
+	background-color: transparent;
+	text-decoration: none;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	color: #5F4B36;
+	border: 1px solid #D1C0A5;
+	margin: 0 5px;
+	vertical-align: middle;
+	padding: 0 10px;
+	cursor: pointer;
+}
+
+.pageActive {
+	background-color: #5F4B36 !important;
+	color: #ffffff !important;
+}
+
+#law_list li{
+	cursor: pointer;
+}

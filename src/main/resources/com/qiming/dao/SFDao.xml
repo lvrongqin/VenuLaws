@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qiming.dao.SFDao">
+    <!--添加-->
+    <insert id="addSfx" parameterType="com.qiming.domain.Sfx">
+        insert into t_sfx(id,title,content)values(#{id},#{title},#{content})
+    </insert>
+    <!--查找所有-->
+    <select id="sfxAll" resultType="com.qiming.domain.Sfx">
+        select *from t_sfx
+    </select>
+    <!--根据id查询-->
+    <select id="sfxFindById" resultType="com.qiming.domain.Sfx">
+        select *from t_sfx where id=#{id}
+    </select>
+
+    <!--添加-->
+    <insert id="addSjd" parameterType="com.qiming.domain.Sjd">
+        insert into t_sjd(id,title,content)values(#{id},#{title},#{content})
+    </insert>
+    <!--查找所有-->
+    <select id="sjdAll" resultType="com.qiming.domain.Sjd">
+        select *from t_sjd
+    </select>
+    <!--根据id查询-->
+    <select id="sjdFindById" resultType="com.qiming.domain.Sjd">
+        select *from t_sjd where id=#{id}
+    </select>
+
+</mapper>

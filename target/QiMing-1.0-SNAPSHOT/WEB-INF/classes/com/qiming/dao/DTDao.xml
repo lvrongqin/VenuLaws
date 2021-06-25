@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qiming.dao.DTDao">
+    <!--添加-->
+    <insert id="addDjs" parameterType="com.qiming.domain.Djs">
+        insert into t_djs(id,title,time,content)values(#{id},#{title},#{time},#{content})
+    </insert>
+    <!--获取总条数-->
+    <select id="djsGetCount" resultType="int">
+        select count(*) from t_djs
+    </select>
+    <!--分页展示-->
+    <select id="djsGetPageData" resultType="com.qiming.domain.Djs">
+        select *from t_djs limit #{index} , 5
+    </select>
+    <!--查找所有-->
+    <select id="djsAll" resultType="com.qiming.domain.Djs">
+        select *from t_djs
+    </select>
+    <!--根据id查询-->
+    <select id="djsFindById" resultType="com.qiming.domain.Djs">
+        select *from t_djs where id=#{id}
+    </select>
+
+    <!--添加-->
+    <insert id="addDjx" parameterType="com.qiming.domain.Djx">
+        insert into t_djx(id,title,time,content)values(#{id},#{title},#{time},#{content})
+    </insert>
+    <!--获取总条数-->
+    <select id="djxGetCount" resultType="int">
+        select count(*) from t_djx
+    </select>
+    <!--分页展示-->
+    <select id="djxGetPageData" resultType="com.qiming.domain.Djx">
+        select *from t_djx limit #{index} , 5
+    </select>
+    <!--查找所有-->
+    <select id="djxAll" resultType="com.qiming.domain.Djx">
+        select *from t_djx
+    </select>
+    <!--根据id查询-->
+    <select id="djxFindById" resultType="com.qiming.domain.Djx">
+        select *from t_djx where id=#{id}
+    </select>
+
+    <!--添加-->
+    <insert id="addDzx" parameterType="com.qiming.domain.Dzx">
+        insert into t_dzx(id,title,time,content)values(#{id},#{title},#{time},#{content})
+    </insert>
+    <!--获取总条数-->
+    <select id="dzxGetCount" resultType="int">
+        select count(*) from t_dzx
+    </select>
+    <!--分页展示-->
+    <select id="dzxGetPageData" resultType="com.qiming.domain.Dzx">
+        select *from t_dzx limit #{index} , 5
+    </select>
+    <!--查找所有-->
+    <select id="dzxAll" resultType="com.qiming.domain.Dzx">
+        select *from t_dzx
+    </select>
+    <!--根据id查询-->
+    <select id="dzxFindById" resultType="com.qiming.domain.Dzx">
+        select *from t_dzx where id=#{id}
+    </select>
+
+</mapper>

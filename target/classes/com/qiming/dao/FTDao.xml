@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qiming.dao.FTDao">
+    <insert id="addFqt" parameterType="com.qiming.domain.Fqt">
+        insert into t_fqt(id,filename,url) values (#{id},#{filename},#{url})
+    </insert>
+    <select id="fqtAll" resultType="com.qiming.domain.Fqt">
+        select * from t_fqt
+    </select>
+</mapper>
