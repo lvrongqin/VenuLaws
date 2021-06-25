@@ -11,8 +11,8 @@ import java.io.FileNotFoundException;
 public class OssUtils {
     // 创建存储空间，Endpoint以杭州为例，其它Region请按实际情况填写。
     private static String endpoint = "https://oss-cn-beijing.aliyuncs.com";
-    private static String accessId = "LTAI5tGZTBBzQS2N43fkBwja";
-    private static String accessKey = "RpJofXZ0RsjGb100Pjs45EADtN4ni5";
+    private static String accessId = "LTAI5tGZTBBzQS2N43fkbcda";
+    private static String accessKey = "RpJofXZ0RsjGb100Pjs45EADtNabcd";
     private static String privateBucket = "venu";
 
 
